@@ -29,7 +29,6 @@ jobs:
 # Runs a single command using the runners shell
     - name: Installing Surge
       run: npm install --global surge
-    
     - name: depolying using surge
-      run: surge ./ bootcampshaheer.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
+      run: surge ./ bootcampshaheer.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       
